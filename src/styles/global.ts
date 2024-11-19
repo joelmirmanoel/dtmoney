@@ -4,14 +4,14 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #F0F2F5;
         --red: #E52E4D;
-        ;
+    
         --green: #33CC95; 
         --blue: #5429CC;
 
         --blue-light: #6933FF;
 
         --text-title: #363F5F;
-        --text-bory: #969CB3;
+        --text-body: #969CB3;
 
         --background: #F0F2F5;
         --shape: #FFFFFF;
@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    bory {
+    body {
         background: var(--background);
         -webkit-font-smoothing: antialiased;
     }
@@ -77,5 +77,20 @@ export const GlobalStyle = createGlobalStyle`
         padding: 3rem;
         position: relative;
         border-radius: 0.24rem;
+    }
+
+    .react-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+
     }
 `
