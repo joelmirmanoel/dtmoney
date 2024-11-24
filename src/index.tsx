@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createServer, Model } from 'miragejs';
 import {App} from './App';
-import { title } from 'process';
 
 createServer({
   models: {
@@ -12,7 +11,7 @@ createServer({
 
   seeds(server) {
     server.db.loadData({
-      transactions: [
+      transaction: [
         {
           id:1,
           title: 'Freelance de website',
@@ -38,7 +37,7 @@ createServer({
       this.namespace = 'api';
 
       this.get('/transactions', () => {
-       return this.schema.all('transation')
+       return this.schema.all('transaction')
       })
 
       this.post('/transactions', (schema, request) => {
