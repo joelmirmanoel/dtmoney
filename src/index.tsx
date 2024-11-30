@@ -11,7 +11,7 @@ createServer({
 
   seeds(server) {
     server.db.loadData({
-      transaction: [
+      transactions: [
         {
           id:1,
           title: 'Freelance de website',
