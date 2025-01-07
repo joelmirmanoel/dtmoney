@@ -61,7 +61,7 @@ $ yarn start
 
 
 
-Made with 💜 by <a href="https://github.com/joelmirmanoel" target="_blank">Joelmir Silva</a>
+Made with by <a href="https://github.com/joelmirmanoel" target="_blank">Joelmir Silva</a>
 
 &#xa0;
 
